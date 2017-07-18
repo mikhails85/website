@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {    
+    "target": "es5",  
+    "module": "commonjs",
+     "lib": [
+      "es2016",
+      "dom"
+    ],                       
+    "sourceMap": false,
+    "outDir": "./www",    
+    "strict": true,   
+    "noImplicitAny": false,     
+    "moduleResolution": "node",    
+    "rootDirs": ["./src"],
+    "typeRoots": [
+            "node_modules/@types"
+        ],          
+    "experimentalDecorators": true, 
+    "emitDecoratorMetadata": true  
+  },
+  "exclude": [
+        "node_modules",
+        "./src/web/aot"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf www/ && ng build && node_modules/.bin/ngc -p src/web/tsconfig.aot.json && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikhails85/website.git"
+  },
+  "keywords": [
+    "angular",
+    "node",
+    "website"
+  ],
+  "author": "Mikhail Sapunov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikhails85/website/issues"
+  },
+  "homepage": "https://github.com/mikhails85/website#readme",
+   "dependencies": {
+    "@angular/animations": "^4.0.0",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.2.1",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/language-service": "^4.0.0",
+    "@types/jasmine": "~2.5.53",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~3.0.1",
+    "jasmine-core": "~2.6.2",
+    "jasmine-spec-reporter": "~4.1.0",  
+    "ts-node": "~3.0.4",
+    "tslint": "~5.3.2",
+    "typescript": "~2.3.3"
+  }
+}

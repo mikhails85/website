@@ -1,0 +1,31 @@
+Установка Окружения
+1. Установить NVM (https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-a-centos-7-server)
+2. Утановить Node.js
+3. Установить npm install -g @angular/cli@latest
+4. Установить npm install -g typescript
+5. Склонировать git репозитарий
+6. Создать пакедж npm init
+7. выполнить комманду ng new web -dir ./website/src/web -st -si -sg -sc   
+8. перносим angular-cli  tsconfig в корневую папку 
+9. перемещаем содержимое папки ./website/src/web/src в ./website/src/web
+10. tsinit в папку ./website/src/website
+11. правим файл angular-cli
+    -  "root": "./src/web/"
+    -  "outDir": "./wwww/web",
+    -  удалить секции тестирования
+12. правим файл tsconfig
+    - заменяем на файл https://github.com/mikhails85/go-sammy/blob/master/tsconfig.json
+    - правим пути 
+13. правим файл tsconfig.app.json
+    - заменяем на файл https://github.com/mikhails85/go-sammy/blob/master/src/web/wwwroot/tsconfig.app.json
+    - правим пути 
+14. создать файл tsconfig.aot.json
+    - https://github.com/mikhails85/go-sammy/blob/master/src/web/wwwroot/tsconfig.aot.json
+15. создать файл .gitignore
+    - https://github.com/mikhails85/go-sammy/blob/master/.gitignore
+16. в package.json добавить билд скрипт
+    -  "build": "rm -rf www/ && ng build && node_modules/.bin/ngc -p src/web/tsconfig.aot.json && tsc"
+17. git add -A && git commit -m "Your Message"
+18. npm install
+19. npm install -S @angular/platform-server @angular/animations
+20. npm run build
