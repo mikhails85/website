@@ -59,3 +59,4 @@ typings/
 
 # Build directories
 www
+src/web/aot
