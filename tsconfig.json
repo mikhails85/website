@@ -7,7 +7,7 @@
       "dom"
     ],                       
     "sourceMap": false,
-    "outDir": "./www",    
+    "outDir": "./www/web",    
     "strict": true,   
     "noImplicitAny": false,     
     "moduleResolution": "node",    
@@ -16,10 +16,11 @@
             "node_modules/@types"
         ],          
     "experimentalDecorators": true, 
-    "emitDecoratorMetadata": true  
+    "emitDecoratorMetadata": true  ,
+    "noStrictGenericChecks": true,
+    "skipLibCheck": true
   },
   "exclude": [
-        "node_modules",
-        "./src/web/aot"
+        "node_modules"
     ]
 }

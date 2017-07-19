@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "./src/web/",
-     "outDir": "./wwww/web",
+     "outDir": "./www/web",
       "assets": [
         "assets",
         "favicon.ico"
@@ -29,9 +29,9 @@
   ], 
   "lint": [
     {
-      "project": "src/tsconfig.app.json"
+      "project": "tsconfig.app.json"
     }
-  ]
+  ],
   "defaults": {
     "styleExt": "css",
     "component": {}
