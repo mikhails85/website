@@ -2,9 +2,9 @@
   "name": "website",
   "version": "1.0.0",
   "description": "My Website",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "clear": "rm -rf www/ && rm -rf src/web/aot/",
+    "clear": "rm -rf bin/ && rm -rf src/web/aot/",
     "build": "ng build && node_modules/.bin/ngc -p src/web/tsconfig.aot.json && tsc",
     "start": "npm run clear && npm run build"
   },

@@ -1,7 +1,7 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
-        "outDir": "../../www/web",
+        "outDir": "../../bin/web",
         "baseUrl": "",
         "sourceMap": true,
         "declaration": false,

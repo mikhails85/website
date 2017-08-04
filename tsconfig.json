@@ -7,7 +7,7 @@
       "dom"
     ],                       
     "sourceMap": false,
-    "outDir": "./www/web",    
+    "outDir": "./bin",    
     "strict": true,   
     "noImplicitAny": false,     
     "moduleResolution": "node",    

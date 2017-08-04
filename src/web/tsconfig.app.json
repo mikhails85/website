@@ -1,7 +1,7 @@
 {  
   "compilerOptions": {
     "target": "es5", 
-    "outDir": "../www/web/app",
+    "outDir": "../bin/web/app",
     "module": "es2015",
     "baseUrl": "",
     "types": [],
