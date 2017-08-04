@@ -17,7 +17,7 @@
         ],          
     "experimentalDecorators": true, 
     "emitDecoratorMetadata": true  ,
-    "noStrictGenericChecks": true,
+    /*"noStrictGenericChecks": true,*/
     "skipLibCheck": true
   },
   "exclude": [

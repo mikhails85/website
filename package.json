@@ -4,8 +4,8 @@
   "description": "My Website",
   "main": "index.js",
   "scripts": {
-    "clear":"rm -rf www/",    
-    "build": "ng build && node_modules/.bin/ngc -p src/web/tsconfig.aot.json && tsc",    
+    "clear": "rm -rf www/ && rm -rf src/web/aot/",
+    "build": "ng build && node_modules/.bin/ngc -p src/web/tsconfig.aot.json && tsc",
     "start": "npm run clear && npm run build"
   },
   "repository": {
@@ -35,6 +35,7 @@
     "@angular/platform-server": "^4.3.0",
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
+    "express": "^4.15.3",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
