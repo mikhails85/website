@@ -35,9 +35,9 @@
 +1.1 Обновить ангуляр до последней верисии 
 +1.2 проверить еще раз
 +2. Пофиксить баги
-3. Закомитить в гит (git add -A && git commit -m "Finish setup project")
-4. Добавить меню роутинг и две тестовые сраницы
-5. Закомитить.
++3. Закомитить в гит (git add -A && git commit -m "Finish setup project")
++4. Добавить меню роутинг и две тестовые сраницы
+5. Закомитить.(git add -A && git commit -m "Add pages and menu")
 
 Заметки 
 https://netbasal.com/implementing-auth-guard-with-componentless-route-in-angular-b50a21f3bd77
