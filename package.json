@@ -6,7 +6,7 @@
   "scripts": {
     "clear": "rm -rf bin/ && rm -rf src/web/aot/",
     "build": "ng build && node_modules/.bin/ngc -p src/web/tsconfig.aot.json && tsc",
-    "start": "npm run clear && npm run build"
+    "start": "npm run clear && npm run build && node bin/index"
   },
   "repository": {
     "type": "git",
@@ -24,16 +24,16 @@
   },
   "homepage": "https://github.com/mikhails85/website#readme",
   "dependencies": {
-    "@angular/animations": "^4.3.0",
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/forms": "^4.0.0",
-    "@angular/http": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/platform-server": "^4.3.0",
-    "@angular/router": "^4.0.0",
+    "@angular/animations": "^4.3.3",
+    "@angular/common": "^4.3.3",
+    "@angular/compiler": "^4.3.3",
+    "@angular/core": "^4.3.3",
+    "@angular/forms": "^4.3.3",
+    "@angular/http": "^4.3.3",
+    "@angular/platform-browser": "^4.3.3",
+    "@angular/platform-browser-dynamic": "^4.3.3",
+    "@angular/platform-server": "^4.3.3",
+    "@angular/router": "^4.3.3",
     "core-js": "^2.4.1",
     "express": "^4.15.3",
     "rxjs": "^5.1.0",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@angular/cli": "1.2.1",
-    "@angular/compiler-cli": "^4.0.0",
+    "@angular/compiler-cli": "^4.3.3",
     "@angular/language-service": "^4.0.0",
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
@@ -51,6 +51,6 @@
     "jasmine-spec-reporter": "~4.1.0",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
-    "typescript": "~2.3.3"
+    "typescript": "^2.4.2"
   }
 }

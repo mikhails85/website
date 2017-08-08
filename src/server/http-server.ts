@@ -26,7 +26,7 @@ export class HttpServer {
 
   private config() {
     enableProdMode();
-    let template = readFileSync(join(__dirname, '..',  'index.html')).toString();
+    let template = readFileSync(join(__dirname, '..', 'web', 'index.html')).toString();
     this.app.engine('html', (_, options, callback) => {
       const opts = { document: template, url: options.req.url };
 
@@ -34,9 +34,9 @@ export class HttpServer {
         .then(html => callback(null, html));
     });
     this.app.set('view engine', 'html');
-    this.app.set('views', 'www')
+    this.app.set('views', 'bin/web')
 
-    this.app.get('*.*', express.static(join(__dirname, '..')));
+    this.app.get('*.*', express.static(join(__dirname, '..', 'web')));
   }
 
   private routes() {

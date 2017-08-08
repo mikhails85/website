@@ -29,3 +29,20 @@
 18. npm install
 19. npm install -S @angular/platform-server @angular/animations
 20. npm run build
+
+Текущие задачи
++1. Запустить приложение, проверить что работает (http://port-8800.Dev-Enviroment-mikhails85717227.codeanyapp.com)
++1.1 Обновить ангуляр до последней верисии 
++1.2 проверить еще раз
++2. Пофиксить баги
+3. Закомитить в гит (git add -A && git commit -m "Finish setup project")
+4. Добавить меню роутинг и две тестовые сраницы
+5. Закомитить.
+
+Заметки 
+https://netbasal.com/implementing-auth-guard-with-componentless-route-in-angular-b50a21f3bd77
+https://medium.com/@cyrilletuzi/angular-server-side-rendering-in-node-with-express-universal-engine-dce21933ddce
+
+http://jasonwatmore.com/post/2016/08/16/angular-2-jwt-authentication-example-tutorial
+https://github.com/serhiisol/ngx-auth-example/blob/master/src/app/shared/authentication/token-storage.service.ts 
+https://github.com/serhiisol/ngx-auth 
