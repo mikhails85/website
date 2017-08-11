@@ -37,7 +37,9 @@
 +2. Пофиксить баги
 +3. Закомитить в гит (git add -A && git commit -m "Finish setup project")
 +4. Добавить меню роутинг и две тестовые сраницы
-5. Закомитить.(git add -A && git commit -m "Add pages and menu")
++5. Закомитить.(git add -A && git commit -m "Add pages and menu")
++6. СЕО оптимизация
++7. Закомитить в гит (git add -A && git commit -m "SEO")
 
 Заметки 
 https://netbasal.com/implementing-auth-guard-with-componentless-route-in-angular-b50a21f3bd77
@@ -46,3 +48,7 @@ https://medium.com/@cyrilletuzi/angular-server-side-rendering-in-node-with-expre
 http://jasonwatmore.com/post/2016/08/16/angular-2-jwt-authentication-example-tutorial
 https://github.com/serhiisol/ngx-auth-example/blob/master/src/app/shared/authentication/token-storage.service.ts 
 https://github.com/serhiisol/ngx-auth 
+
+https://github.com/ngx-meta/core#set-meta-tags-programmatically
+https://stackoverflow.com/questions/43522367/angular-2-4-universal-how-to-use-json-ld-data
+https://coursetro.com/posts/code/68/Make-your-Angular-App-SEO-Friendly-(Angular-4-+-Universal)
