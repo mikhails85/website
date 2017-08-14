@@ -1,7 +1,9 @@
 import * as express from "express";
 import * as path from "path";
+import * as bodyParser from "body-parser";
 
 import { HtmlRoutes } from "./routes/html";
+import { ApiRoutes } from "./routes/api";
 import 'reflect-metadata';
 import 'zone.js/dist/zone-node';
 import { platformServer, renderModuleFactory } from '@angular/platform-server'
@@ -16,7 +18,7 @@ export class HttpServer {
   private app: express.Application;
     
   constructor() {  
-    this.app = express();
+    this.app = express();    
     this.config();
     this.routes();
     this.api();    
@@ -25,6 +27,7 @@ export class HttpServer {
   private api() {}
 
   private config() {
+    
     enableProdMode();
     let template = readFileSync(join(__dirname, '..', 'web', 'index.html')).toString();
     this.app.engine('html', (_, options, callback) => {
@@ -36,15 +39,18 @@ export class HttpServer {
     this.app.set('view engine', 'html');
     this.app.set('views', 'bin/web')
 
-    this.app.get('*.*', express.static(join(__dirname, '..', 'web')));
+    this.app.get('*.*', express.static(join(__dirname, '..', 'web')));       
   }
 
   private routes() {
     let router: express.Router;
     router = express.Router();
     
-    
+    ApiRoutes.create(router);
     HtmlRoutes.create(router);
+    
+    this.app.use(bodyParser.urlencoded({ extended: false }));
+    this.app.use(bodyParser.json());
     
     this.app.use(router);    
   }

@@ -40,6 +40,10 @@
 +5. Закомитить.(git add -A && git commit -m "Add pages and menu")
 +6. СЕО оптимизация
 +7. Закомитить в гит (git add -A && git commit -m "SEO")
+8. Авторизация 
+9. Проверить пофиксить баги 
+10. Закомитить в гит (git add -A && git commit -m "Login page")
+
 
 Заметки 
 https://netbasal.com/implementing-auth-guard-with-componentless-route-in-angular-b50a21f3bd77
