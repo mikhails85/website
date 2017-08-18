@@ -5,7 +5,7 @@
   },
   "apps": [
     {
-      "root": "./src/web/",
+     "root": "./src/web/",
      "outDir": "./bin/web",
       "assets": [
         "assets",

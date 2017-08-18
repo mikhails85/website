@@ -6,10 +6,10 @@ import { Meta, Title } from "@angular/platform-browser";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  title = 'Home';
+  pageTitle = 'Home';
   constructor(meta: Meta, title: Title) {
 
-      title.setTitle('Home');
+      title.setTitle(this.pageTitle);
 
       meta.addTags([
         { name: 'author',   content: 'Coursetro.com'},

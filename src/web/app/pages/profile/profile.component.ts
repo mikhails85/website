@@ -6,10 +6,10 @@ import { Meta, Title } from "@angular/platform-browser";
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-  title = 'Profile';
+  pageTitle = 'Profile';
   constructor(meta: Meta, title: Title) {
 
-      title.setTitle('Profile');
+      title.setTitle(this.pageTitle);
 
       meta.addTags([
         { name: 'author',   content: 'Coursetro.com'},

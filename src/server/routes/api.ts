@@ -14,17 +14,10 @@ export class ApiRoutes {
   }
 
   public static create(router: Router) {    
-    router.post("/api/authenticate", (req: Request, res: Response, next: NextFunction) => {
-      
-       console.log(req.body); 
+    router.post("/api/authenticate", (req: Request, res: Response, next: NextFunction) => {      
        let params = req.body;
        let testUser = ApiRoutes.fakeUser();
-      
-       console.log("Username: " + params.username); 
-       console.log("Username: " + testUser.Username);
-       console.log("Password: " + params.password); 
-       console.log("Password: " + testUser.Password); 
-      
+            
        if (params.username === testUser.Username && params.password === testUser.Password) {               
           res.status(200).json({token: 'fake-jwt-token'});
         } else {

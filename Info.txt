@@ -40,10 +40,19 @@
 +5. Закомитить.(git add -A && git commit -m "Add pages and menu")
 +6. СЕО оптимизация
 +7. Закомитить в гит (git add -A && git commit -m "SEO")
-8. Авторизация 
-9. Проверить пофиксить баги 
-10. Закомитить в гит (git add -A && git commit -m "Login page")
-
++8. Авторизация 
++9. Проверить пофиксить баги 
++10. Закомитить в гит (git add -A && git commit -m "Login page")
++11. Применить общий стиль 
++12. Сделать хоме падже с харкоджеными данными 
+13. Сделать логин и регистрационую сраницу
++13.1 логин
+13.2 регистрационую
+13.2.1 Создать даталейер 
+13.2.2 Создать метод для регисрации нового пользователя
+13.2.3 Создать компонент для регисрации нового пользователя
+14. Сделать профель сраницу
+15. Закомитить в гит (git add -A && git commit -m "Style")
 
 Заметки 
 https://netbasal.com/implementing-auth-guard-with-componentless-route-in-angular-b50a21f3bd77
@@ -56,3 +65,23 @@ https://github.com/serhiisol/ngx-auth
 https://github.com/ngx-meta/core#set-meta-tags-programmatically
 https://stackoverflow.com/questions/43522367/angular-2-4-universal-how-to-use-json-ld-data
 https://coursetro.com/posts/code/68/Make-your-Angular-App-SEO-Friendly-(Angular-4-+-Universal)
+
+https://medium.com/level-up-web/free-responsive-html5-css3-website-templates-9c3938d62428
+https://w3layouts.com/free-responsive-html5-css3-website-templates/
+https://html5up.net/parallelism
+http://www.free-css.com/template-categories/responsive?start=12
+
+http://www.free-css.com/free-css-templates/page212/hydrogen
+http://www.free-css.com/free-css-templates/page207/work
+https://www.codementor.io/codeforgeek/extract-link-information-using-nodejs-angularjs-du107t197
+https://github.com/brenden/node-webshot
+https://github.com/myspace/page-previewer
+
+https://cito.github.io/blog/web-ext-with-angular/
+https://www.sitepoint.com/chrome-extension-angular-2/
+
+http://thejackalofjavascript.com/building-todo-app-diskdb/
+
+https://github.com/torokmark/design_patterns_in_typescript
+https://github.com/gztchan/design-patterns-in-typescript
+https://spin.atomicobject.com/2017/04/24/typescript-modular-typesafe-metadata/
