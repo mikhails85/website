@@ -1,4 +1,4 @@
-import { HttpServer } from './server/http-server';
+import { HttpServer } from './server/http.server';
 class App {
     
    server:HttpServer; 
